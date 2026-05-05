@@ -2,15 +2,22 @@
 
 KirbyEngine은 제가 C++로 직접 만들고 있는 미니 게임엔진 + 에디터 프로젝트입니다.
 
-이 프로젝트의 목표는 두 가지입니다.
+## 핵심 구현 요약
 
-- 게임 클라이언트 프로그래머 취업 준비용 포트폴리오 만들기
-- 단순히 기능만 붙이는 것이 아니라, 엔진 구조를 직접 정리하고 개선해 보는 경험 쌓기
-
-현재 프로젝트는 완전히 새 엔진을 처음부터 다 만든 상태라기보다는,
-"돌아가는 기능을 유지하면서 구조를 점점 정리해 가는 중간 단계"에 더 가깝습니다.
+- C++17 / Win32API / DirectX9 기반 미니 게임엔진 및 에디터
+- GameObject-Component 구조와 parent-child 계층 구조 구현
+- JSON 기반 SceneData 저장/로드 및 컴포넌트 복원
+- EditorApp / GameApp 실행 분리
+- EngineFrameworkDll / EngineEditor / KirbyGameDll 구조 분리
+- Box2D 기반 Physics2D 및 Collision / Trigger 이벤트 전달
 
 ## 1. 프로젝트 한눈에 보기
+
+![에디터 화면 1](DocsImages/EditorAppScreenshot.png)
+
+![에디터 화면 2](DocsImages/BuildScreenshot.png)
+
+![게임플레이 화면](DocsImages/GamePlay.gif)
 
 현재 솔루션의 큰 구성은 아래와 같습니다.
 

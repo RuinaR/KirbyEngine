@@ -684,7 +684,7 @@ namespace
 
 		FindClose(dllFindHandle);
 
-		SetBuildGameStage(6, 6, "6/6 사용 중인 Resources만 복사하는 중...");
+		SetBuildGameStage(6, 6, "6/6 Resources 복사하는 중...");
 		std::string resourceCopyErrorMessage;
 		if (!CopySceneReferencedResources(sceneNames, sourceResourcesPath, buildResourcesPath, resourceCopyErrorMessage))
 		{
@@ -692,7 +692,7 @@ namespace
 			return false;
 		}
 
-		SetBuildGameResult("BuildOutput 생성과 SceneData/BuildSettings, 사용 중인 Release exe/dll/Resources 복사가 완료되었습니다.");
+		SetBuildGameResult("BuildOutput 생성과 SceneData/BuildSettings, Release exe/dll/Resources 복사가 완료되었습니다.");
 		return true;
 	}
 
