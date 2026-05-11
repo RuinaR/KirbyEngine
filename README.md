@@ -108,16 +108,14 @@ KirbyEngine은 C++로 직접 만들고 있는 미니 게임엔진 + 에디터 �
 - `Component`에 persistent `componentId` 추가
 - registry 기반 reference field의 SceneData 저장/로드 기반 추가
 
-## 5. 아직 정리 중인 부분
-
-현재 프로젝트는 동작은 되지만, 구조적으로 더 정리할 부분이 남아 있습니다.
+## 5. 개선 예정 사항
 
 - `MainFrame`, `WindowFrame`, `RenderManager` 안에 runtime/editor 책임이 아직 함께 있음
 - `EngineEditor` 분리가 완전히 끝난 상태는 아님
 - 일부 editor 코드가 아직 `EngineFrameworkDll` 안에 남아 있음
 - 사용자 컴포넌트 쪽 reference field 활용 예시는 계속 늘려갈 예정
 
-즉, 지금 상태는 "기능 구현 완료"보다 "기능을 유지하면서 구조를 더 좋은 방향으로 고쳐 가는 중"이라고 보는 편이 맞습니다.
+현재 프로젝트는 기능 구현 이후, Runtime / Editor 경계를 더 명확히 하기 위한 구조 개선을 진행하고 있습니다.
 
 ## 6. 실행 프로젝트
 
