@@ -110,12 +110,13 @@ KirbyEngine은 C++로 직접 만들고 있는 미니 게임엔진 + 에디터 �
 
 ## 5. 개선 예정 사항
 
-- `MainFrame`, `WindowFrame`, `RenderManager` 안에 runtime/editor 책임이 아직 함께 있음
-- `EngineEditor` 분리가 완전히 끝난 상태는 아님
-- 일부 editor 코드가 아직 `EngineFrameworkDll` 안에 남아 있음
-- 사용자 컴포넌트 쪽 reference field 활용 예시는 계속 늘려갈 예정
+현재 프로젝트는 주요 기능이 동작하는 상태이며,
+Runtime / Editor 경계를 더 명확히 하기 위한 구조 개선을 계속 진행하고 있습니다.
 
-현재 프로젝트는 기능 구현 이후, Runtime / Editor 경계를 더 명확히 하기 위한 구조 개선을 진행하고 있습니다.
+- `MainFrame`, `WindowFrame`, `RenderManager` 안에 남아 있는 runtime/editor 책임을 단계적으로 분리할 예정입니다.
+- editor 전용 기능은 `EngineEditor` 쪽으로 더 명확히 이동할 예정입니다.
+- 일부 editor 코드는 `EngineFrameworkDll`에서 `EngineEditor` 쪽으로 분리할 예정입니다.
+- 사용자 컴포넌트의 reference field 활용 예시는 계속 늘려갈 예정입니다.
 
 ## 6. 실행 프로젝트
 
